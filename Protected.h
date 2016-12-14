@@ -19,7 +19,6 @@ auto& data = *pData;
 data.push_back(1);
 */
 
-
 #pragma once
 
 #include <mutex>
