@@ -77,7 +77,7 @@ public:
         }
 
         // 'Locker' can only be created via 'Protected::Lock()'. Return value optimization (RVO) is supported on most compilers, 
-        // then copy constructor won't be called. Just in case implement copy constructor.
+        // then copy constructor won't be called, but just in case implement copy constructor.
         Locker(const Locker& rhs)
             :pProtected_(rhs.pProtected_), pProtector_(rhs.pProtector_)
         {
