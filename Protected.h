@@ -63,8 +63,6 @@ public:
         Locker(Protected* pProtected, Protector* pProtector)
             : pProtected_(pProtected), pProtector_(pProtector)
         {
-            printf("1 Locker\n");
-
             pProtector_->lock();
         }
 
