@@ -11,7 +11,7 @@ ProtectedByCriticalSection<vector<int>> protectedData = {1, 2, 3};
 // Constructor of 'Locker' locks synchronization object and it's destructor unlocks it.
 auto pData = protectedData.Lock();
 
-pDta->push_back(1);
+pData->push_back(1);
 
 // Or could be used dereference to data
 auto& data = *pData;
