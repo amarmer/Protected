@@ -11,7 +11,8 @@ For instance:
 // Methods of data cannot accessed since Protected uses private inheritance.
 ProtectedByCriticalSection<vector<int>> protectedData = {1, 2, 3};
 
-// In order to access methods, should be called 'Lock()', it returns 'Locker' object, which allow to access data via it's pointer.
+// In order to access methods, should be called 'Lock()', it returns 'Locker' object, 
+// which allow to access data via it's pointer.
 // Constructor of 'Locker' locks synchronization object and it's destructor unlocks it.
 auto pData = protectedData.Lock();
 
