@@ -1,5 +1,5 @@
 # Protected
-Class Protected combines data and synchronization objects and allows only synchronized data access
+Class Protected combines data and synchronization objects and allows only synchronized data access.
 
 
 When a data variable needs to be synchronized, in addition to the data variable, 
