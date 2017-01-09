@@ -12,7 +12,8 @@ For instance:
 ProtectedByCriticalSection<vector<int>> protectedData = {1, 2, 3};
 
 // In order to access methods, should be called 'Lock()', it returns 'Locker' object, 
-// which allow to access data via it's pointer. Constructor of 'Locker' locks synchronization object and it's destructor unlocks it.
+// which allows to access protectedData via it's pointer. 
+// Constructor of 'Locker' locks synchronization object and it's destructor unlocks it.
 auto pData = protectedData.Lock();
 
 pData->push_back(1);
