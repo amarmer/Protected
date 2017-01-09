@@ -2,7 +2,8 @@
 Class Protected combines data and synchronization objects and allows only synchronized data access
 
 
-When a data variable needs to be synchronized, in addition to the data variable, added synchronization variable (like mutex, etc.).
+When a data variable needs to be synchronized, in addition to the data variable, 
+added synchronization variable (like mutex, etc.).
 Class Protected combines these 2 variables and doesn't allow to use the data variable without synchronization.
 
 For instance:
