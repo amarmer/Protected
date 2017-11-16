@@ -18,7 +18,7 @@ auto pData = protectedData.Lock();
 
 pData->push_back(1);
 
-// Or could be used dereference to data
+// Or could be used dereference to `data`
 auto& data = *pData;
 data.push_back(1);
 
